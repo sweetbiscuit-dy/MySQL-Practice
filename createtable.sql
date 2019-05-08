@@ -11,7 +11,7 @@ USE student;
 -- STEP THREE. create the student info table
 CREATE TABLE IF NOT EXISTS student_info (
 	name VARCHAR(20),
-	stuID INT,
+	stuID VARCHAR(15),
 	age TINYINT,
 	gender ENUM('male', 'femal', 'secret'),
 	addr VARCHAR(100),
@@ -20,5 +20,5 @@ CREATE TABLE IF NOT EXISTS student_info (
 ) ENGINE = INNODB CHARSET = 'utf8mb4';
 
 -- STEP FOUR. insert a record in to the table
-INSERT INTO student_info(name, stuID, age, gender, addr, tel, mail) VALUE('Bob', 13010199025, 22, 'male',
+INSERT INTO student_info(name, stuID, age, gender, addr, tel, mail) VALUE('Bob', '13010199025', 22, 'male',
 'Xi''an', '18829089700', 'hsyfzdy@163.com');
